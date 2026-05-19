@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Superior Digital - Your Apple Business Partner in India. MacBook Neo for Business Teams.">
+    <title>Superior Digital | MacBook Neo for Business</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- New Section Styles -->
+    <link rel="stylesheet" href="https://superiorsystems.in/public/website/appleIndia/css/index.css">
+    <link rel="stylesheet" href="https://superiorsystems.in/public/website/appleIndia/css/form.css">
+    <link rel="stylesheet" href="https://superiorsystems.in/public/website/appleIndia/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS (Priority Overrides) -->
+    <link rel="stylesheet" href="css/style.css?v=1.3">
+</head>
+
+<body>
+
+    <header class="header fixed-top">
+        <div class="container-fluid px-3">
+            <div class="header-inner d-flex justify-content-between align-items-center">
+                <div class="left-box d-flex align-items-center">
+                    <img src="https://superiorsystems.in/public/website/appleIndia/images/main-gif.gif" class="logo"
+                        alt="Company animated logo">
+                    <a href="https://superiorsystems.in/">
+                        <div class="d-flex align-items-center partner-box" alt="Company header logo">
+                            <img src="https://superiorsystems.in/public/website/appleIndia/images/main-header-logo.png"
+                                class="apple">
+                        </div>
+                    </a>
+                </div>
+                <button class="superior-btn open-popup">Get a Quote</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="overlay">
+        <div class="popup-box">
+            <div class="popup-header">
+                <h2>Connect With Us</h2>
+                <button class="close-btn" id="closeBtn">✕</button>
+            </div>
+
+            <div class="popup-body" id="formArea">
+                <div class="form-row">
+                    <div>
+                        <input type="text" id="name" placeholder="Full Name*">
+                        <div class="error-text" id="nameErr"></div>
+                    </div>
+                    <div>
+                        <input type="text" id="company" placeholder="Company Name">
+                        <div class="error-text" id="companyErr"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <input type="email" id="email" placeholder="Email*">
+                        <div class="error-text" id="emailErr"></div>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" placeholder="Phone Number*" maxlength="10">
+                        <div class="error-text" id="phoneErr"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="full">
+                        <textarea id="msg" placeholder="Message"></textarea>
+                        <div class="error-text" id="msgErr"></div>
+                    </div>
+                </div>
+
+                <button class="submit-btn" id="submitBtn">Send</button>
+            </div>
+
+            <div class="success" id="successBox">
+                <h2>✅ Submitted!</h2>
+                <p>We will contact you soon</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Split Hero Section -->
+    <section class="hero-split-section">
+        <div class="hero-split-container">
+            <!-- Left Side: Content -->
+            <div class="hero-content-side">
+                <div class="hero-business-content" data-aos="fade-right">
+                    <h1 class="hero-business-title">
+                        <span class="text-brand-red">MacBook Neo</span> for<br>Business Teams
+                    </h1>
+                    <p class="hero-business-subtitle">
+                        Powered by Apple. Delivered by Superior Digital.
+                    </p>
+                    <p class="hero-business-description">
+                        Buy MacBook Neo for business with complete deployment, support, and lifecycle management across India.
+                    </p>
+                    <div class="hero-cta-group-split">
+                        <button class="btn-hero-primary-red open-popup">
+                            Schedule office Demo
+                        </button>
+                        <button class="btn-hero-outline-red open-popup">
+                            Get Bulk Pricing
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Video -->
+            <div class="hero-video-side">
+                <video id="heroVideo" autoplay loop muted playsinline poster="assets/images/macos_hero__exzf2qzsprcm_xlarge_2x.jpg" class="split-video-element">
+                    <source src="assets/images/hero-video.mp4" type="video/mp4">
+                    <source src="assets/images/MacBook_Neo_Social_Video_16x9_HD-hevc__IN-EN.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Brand Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="brand-card-container" data-aos="fade-right" data-aos-delay="200">
+                <h2 class="brand-card-title reveal-hidden">
+                    <span class="text-brand-red">Superior Digital</span> - Your Apple Business Partner in India
+                </h2>
+                <p class="brand-card-sub reveal-hidden stagger-1">
+                    Trusted by growing businesses and enterprise teams, Superior Digital delivers end-to-end Apple
+                    solutions - from procurement to long-term support.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Card 1: Apple Certified -->
+                    <div class="col-md-4">
+                        <div class="static-feature-card reveal-hidden stagger-2">
+                            <div class="feature-card-content">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                    <path d="M12 5l1 2h2l-1.5 1.5.5 2-2-1.5-2 1.5.5-2-1.5-1.5h2z"></path>
+                                </svg>
+                                <h5>Apple-certified<br>expertise</h5>
+                                <p class="feature-card-sub">Certified Apple Enterprise Solutions for your business growth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Pan India -->
+                    <div class="col-md-4">
+                        <div class="static-feature-card reveal-hidden stagger-3">
+                            <div class="feature-card-content">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                                </svg>
+                                <h5>Pan India<br>delivery & support</h5>
+                                <p class="feature-card-sub">Seamless logistics and onsite support across all major cities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Enterprise Solutions -->
+                    <div class="col-md-4">
+                        <div class="static-feature-card reveal-hidden stagger-4">
+                            <div class="feature-card-content">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="M12 3v3m0 12v3M3 12h3m12 0h3"></path>
+                                    <path d="M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1"></path>
+                                    <path d="M18.4 5.6l-2.1 2.1m-8.6 8.6l-2.1 2.1"></path>
+                                </svg>
+                                <h5>Complete enterprise<br>Solutions</h5>
+                                <p class="feature-card-sub">End-to-end device management and IT infrastructure support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Success Pillars -->
+    <section class="showcase-section" data-aos="flip-up">
+        <div class="container">
+            <!-- Image Placeholder -->
+            <div class="app-showcase-wrapper">
+                <img src="assets/images/ai_apps__duxcxyziriie_large_2x.jpg" alt="App Showcase"
+                    class="img-fluid rounded-app-img">
+            </div>
+
+            <!-- Features Row -->
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-6">
+                    <div class="pillar-item">
+                        <i class="fas fa-rocket text-brand-red mb-3"></i>
+                        <p class="pillar-text">Smooth device<br>deployment</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="pillar-item">
+                        <i class="fas fa-sliders-h text-brand-red mb-3"></i>
+                        <p class="pillar-text">Zero operational<br>confusion</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="pillar-item">
+                        <i class="fas fa-headset text-brand-red mb-3"></i>
+                        <p class="pillar-text">Long-term support<br>and management</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="pillar-item">
+                        <i class="fas fa-handshake text-brand-red mb-3"></i>
+                        <p class="pillar-text">A partner who understands<br>business needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Ecosystem -->
+    <section id="why-mac" class="py-5" data-aos="fade-left">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="brand-card-title">Complete <span class="text-brand-red">Apple Ecosystem</span> for Your
+                    Business</h2>
+                <p class="brand-card-sub">Everything your company needs - handled in one place.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Device Ecosystem -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-laptop-medical fs-4"></i>
+                        </div>
+                        <h4>Device Ecosystem</h4>
+                        <p>MacBook, iMac, Mac Mini, iPad, iPhone - fully integrated for your teams.</p>
+                        <div class="ecosystem-overlay">
+                            <div class="device-network">
+                                <i class="fas fa-laptop net-device net-macbook"></i>
+                                <i class="fas fa-mobile-alt net-device net-iphone"></i>
+                                <i class="fas fa-tablet-alt net-device net-ipad"></i>
+                                <i class="fas fa-desktop net-device net-imac"></i>
+                                <div class="net-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Enterprise Setup -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-tools fs-4"></i>
+                        </div>
+                        <h4>Enterprise Setup</h4>
+                        <p>Apple Business Manager (ABM), MDM solutions, and seamless onboarding for employees.</p>
+                        <div class="ecosystem-overlay">
+                            <div class="workflow-container">
+                                <div class="node"><i class="fas fa-circle"></i> ABM</div>
+                                <div class="connector"></div>
+                                <div class="node"><i class="fas fa-circle"></i> MDM</div>
+                                <div class="connector"></div>
+                                <div class="node"><i class="fas fa-circle"></i> Deployment</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deployment -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-shipping-fast fs-4"></i>
+                        </div>
+                        <h4>Deployment & Logistics</h4>
+                        <p>Pan India delivery, warehousing, asset tagging, and inventory control.</p>
+                        <div class="ecosystem-overlay overlay-logistics">
+                            <div class="truck-container">
+                                <i class="fas fa-truck big-truck-anim"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- IT & Support -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-headset fs-4"></i>
+                        </div>
+                        <h4>IT & Support</h4>
+                        <p>Onsite support, training, and post-sales service across India.</p>
+                        <div class="ecosystem-overlay">
+                            <div class="support-signal">
+                                <div class="signal-wave"></div>
+                                <div class="signal-wave"></div>
+                                <div class="signal-wave"></div>
+                                <i class="fas fa-headset"
+                                    style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Commercial Flexibility -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-money-bill-wave fs-4"></i>
+                        </div>
+                        <h4>Commercial Flexibility</h4>
+                        <p>Leasing options, bulk pricing, and structured procurement planning.</p>
+                        <div class="ecosystem-overlay">
+                            <div class="analytics-bars">
+                                <div class="bar" style="height: 40%;"></div>
+                                <div class="bar" style="height: 70%;"></div>
+                                <div class="bar" style="height: 50%;"></div>
+                                <div class="bar" style="height: 90%;"></div>
+                                <div class="bar" style="height: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lifecycle -->
+                <div class="col-md-4">
+                    <div class="ecosystem-card">
+                        <div class="icon-box">
+                            <i class="fas fa-sync fs-4"></i>
+                        </div>
+                        <h4>Lifecycle Management</h4>
+                        <p>Upgrade planning, reverse pickup, and complete device lifecycle control.</p>
+                        <div class="ecosystem-overlay">
+                            <div class="lifecycle-loop">
+                                <div class="cycle-ring"></div>
+                                <div class="cycle-step" style="top:0; left:50%; transform:translate(-50%,-50%);"><i
+                                        class="fas fa-shopping-cart"></i></div>
+                                <div class="cycle-step" style="top:50%; right:0; transform:translate(50%,-50%);"><i
+                                        class="fas fa-sync"></i></div>
+                                <div class="cycle-step" style="bottom:0; left:50%; transform:translate(-50%,50%);"><i
+                                        class="fas fa-arrow-up"></i></div>
+                                <div class="cycle-step" style="top:50%; left:0; transform:translate(-50%,-50%);"><i
+                                        class="fas fa-undo"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Why MacBook Neo -->
+    <section class="feature-row-section" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="brand-card-title">Why <span class="text-brand-red">MacBook Neo</span> for Your Business</h2>
+            <p class="brand-card-sub">Built for modern teams that need performance and reliability.</p>
+
+            <div class="row g-4 mt-4">
+                <!-- Performance -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="gradient-fill-card card-perf">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-perf">
+                            <path
+                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                            </path>
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <line x1="12" y1="12" x2="16" y2="10"></line>
+                        </svg>
+                        <h5><span class="text-perf">Fast</span> and <span class="text-perf">Smooth</span><br>Performance
+                        </h5>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="gradient-fill-card card-exp">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-exp">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                        <h5><span class="text-exp">Consistent</span><br>Experience</h5>
+                    </div>
+                </div>
+                <!-- Battery -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="gradient-fill-card card-batt">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-batt">
+                            <path
+                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                            </path>
+                            <rect x="9" y="8" width="6" height="10" rx="1"></rect>
+                            <path d="M11 8V6h2v2"></path>
+                            <path d="M12 11v4M10 13h4"></path>
+                        </svg>
+                        <h5><span class="text-batt">Long Battery</span><br>Life</h5>
+                    </div>
+                </div>
+                <!-- Design -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="gradient-fill-card card-dsgn">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-dsgn">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                            <path d="M12 7l0 10"></path>
+                            <path d="M7 12l10 0"></path>
+                            <path d="M12 12l3.5 3.5"></path>
+                        </svg>
+                        <h5><span class="text-dsgn">Lightweight and</span><br>Design</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Gains -->
+    <section id="gain" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="brand-card-title">What Your Business <span class="text-brand-red">Actually Gains</span></h2>
+                <p class="brand-card-sub">Premium features designed to elevate your professional workflow.</p>
+            </div>
+            <div class="bento-gain-container">
+                <!-- Item 1: Thin & Fast -->
+                <div class="bento-gain-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/AB9D5915-648C-4E40-8288-F6F9D0175871-export.jpg.jpeg" alt="Ultra Thin and Fast MacBook Neo">
+                    <div class="bento-overlay">
+                        <h5 class="gain-caption">Strikingly thin and fast.</h5>
+                    </div>
+                </div>
+                <!-- Item 2: Display -->
+                <div class="bento-gain-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/BEB7BA2A-F019-4E74-B4F2-542727C7307B-export.jpg.jpeg" alt="Brilliant 13\" Liquid Retina display.">
+                    <div class="bento-overlay">
+                        <h5 class="gain-caption">Brilliant 13" Liquid Retina display.</h5>
+                    </div>
+                </div>
+                <!-- Item 3: macOS Apps -->
+                <div class="bento-gain-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/C93A6130-AB07-42AF-A88E-C0B254C2C32D-export.jpg.jpeg" alt="macOS runs your go-to apps.">
+                    <div class="bento-overlay">
+                        <h5 class="gain-caption">macOS runs your go-to apps.</h5>
+                    </div>
+                </div>
+                <!-- Item 4: AI & Apple Intelligence -->
+                <div class="bento-gain-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/images/0A0956A5-DDBF-4A46-802C-EAA823DDFB69-export.jpg.jpeg" alt="Built for AI and Apple Intelligence.">
+                    <div class="bento-overlay">
+                        <h5 class="gain-caption">Built for AI and Apple Intelligence.</h5>
+                    </div>
+                </div>
+                <!-- Item 5: Battery Life -->
+                <div class="bento-gain-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/images/1945A023-8D7F-4168-9610-ACDF45AF17DB-export.jpg.jpeg" alt="Up to 16 hours of battery life.">
+                    <div class="bento-overlay">
+                        <h5 class="gain-caption">Up to 16 hours of battery life.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Demo Section -->
+    <section id="support" class="demo-section overflow-hidden" data-aos="fade-up">
+        <div class="container-fluid p-0">
+            <div class="row align-items-center g-0">
+                <div class="col-lg-6 py-5 demo-text-col">
+                    <h2 class="demo-title mb-4">Experience MacBook Neo<br>at <span class="text-brand-red">Your Office</span></h2>
+                    <p class="demo-sub mb-5">
+                        Make a confident decision with a real-time experience. Superior Digital will visit your office,
+                        demonstrate MacBook Neo, and leave the device with your team for 3 days.
+                    </p>
+                    <div class="demo-checklist mb-5">
+                        <div class="check-item-final">
+                            <div class="check-icon-bg">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5.5L5 9.5L13 1.5" stroke="#10B981" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <span>In-person demo by our expert</span>
+                        </div>
+                        <div class="check-item-final">
+                            <div class="check-icon-bg">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5.5L5 9.5L13 1.5" stroke="#10B981" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <span>Hands-on testing in your work environment</span>
+                        </div>
+                        <div class="check-item-final">
+                            <div class="check-icon-bg">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5.5L5 9.5L13 1.5" stroke="#10B981" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <span>Real use-case evaluation</span>
+                        </div>
+                        <div class="check-item-final">
+                            <div class="check-icon-bg">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5.5L5 9.5L13 1.5" stroke="#10B981" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <span>Clear decision-making for bulk purchase</span>
+                        </div>
+                    </div>
+                    <button class="btn-demo-large open-popup">Book Your Office Demo</button>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <div class="demo-image-wrapper">
+                        <img src="assets/images/booknowsec.png" alt="Demo Device" class="img-fluid demo-edge-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Trusted By -->
+    <section class="py-5 bg-white" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="brand-card-title">Trusted by <span class="text-brand-red">Businesses Across India</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="trust-stat-card">
+                        <div class="memoji-box mb-4">
+                            <div class="memoji-placeholder">
+                                <img src="assets/images/Rectangle 2.png" alt="Trust" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="stat-content">
+                            <h2 class="stat-number">500+</h2>
+                            <p class="stat-label">Customers Served</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="trust-img-card">
+                                <div class="trust-img-placeholder"
+                                    style="background-color: #EBEBEB; background-image: url('assets/images/Strong Enterprise Delivery Capability.jpg');">
+                                </div>
+                                <div class="trust-overlay">
+                                    <h5>Strong Enterprise<br>Delivery Capability</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trust-img-card">
+                                <div class="trust-img-placeholder"
+                                    style="background-color: #D6D6D6; background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800');">
+                                </div>
+                                <div class="trust-overlay">
+                                    <h5>Reliable Support Across<br>Locations</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="trust-img-card wide-card">
+                                <div class="trust-img-placeholder"
+                                    style="background-color: #F0F0F0; background-image: url('assets/images/Proven Experience In Apple Deployments.jpg');">
+                                </div>
+                                <div class="trust-overlay">
+                                    <h5>Proven Experience In Apple Deployments</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Upgrade Banner -->
+    <section class="upgrade-banner-section">
+        <div class="container text-center">
+            <h2 class="upgrade-title mb-3">Upgrade Your Workplace with <span class="text-brand-red">MacBook Neo</span>
+            </h2>
+            <p class="upgrade-sub mb-5">
+                MacBook Neo with Superior Digital gives your business the performance,<br class="d-none d-md-block">
+                reliability, and support it needs to grow.
+            </p>
+            <div class="upgrade-buttons">
+                <button class="btn-talk me-md-3 mb-3 mb-md-0 open-popup">Talk to an Expert</button>
+                <button class="btn-pricing open-popup">Get Enterprise Pricing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center">
+                        <img src="https://superiorsystems.in/public/website/appleIndia/images/main-gif.gif"
+                            class="logo-footer">
+                        <div class="footer-logo">
+                            <a href="https://superiorsystems.in/"> <img
+                                    src="https://superiorsystems.in/public/website/appleIndia/images/logo.png"
+                                    alt="logo"></a>
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        Superior Digital is an Apple Business Partner delivering Apple and enterprise IT solutions
+                        across India.
+                    </p>
+                    <div class="social-icons desktop-social">
+                        <a href="https://x.com/superior_digi"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/superior-digital-pvt-ltd/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/superiorsystems.in/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/superior_digital/"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <!-- ✅ DUNS BADGES (MOBILE ONLY) -->
+                    <div class="desktop-badges mt-3 d-none d-md-block">
+                        <img src="https://superiorsystems.in/public/website/appleIndia/images/iso-certified.png"
+                            alt="DUNS Badge">
+                        <img src="https://superiorsystems.in/public/website/appleIndia/images/DUNS-Registered-Seal.svg"
+                            alt="DUNS Badge">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="https://superiorsystems.in/apple/at-work">Apple</a>
+                        <a href="https://superiorsystems.in/business">Business</a>
+                        <a href="https://superiorsystems.in/success-stories">Success Stories</a>
+                        <a href="https://superiorsystems.in/events">Events</a>
+                        <a href="https://superiorsystems.in/contact">Contact us</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 802311 6047</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>enquiry@superiorsystems.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>No. 111, Ground Floor, 6th Main, MC Layout, MRCR Extn., Vijayanagar, Bangalore -
+                            560040</span>
+                    </div>
+                </div>
+
+                <div class="mobile-social text-center">
+                    <h5>Social Links</h5>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/superior-digital-pvt-ltd/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/superiorsystems.in/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/superior_digital/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- ✅ DUNS BADGES (MOBILE ONLY) -->
+                <div class="mobile-badges mt-3 d-block d-md-none">
+                    <img src="https://superiorsystems.in/public/website/appleIndia/images/iso-certified.png"
+                        alt="iso Badge">
+                    <img src="https://superiorsystems.in/public/website/appleIndia/images/DUNS-Registered-Seal.svg"
+                        alt="DUNS Badge">
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                Superior Digital Private Limited. © 2025. All Right Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919513521312?text=Hello%20I%20need%20help" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="whatsapp-tooltip">Chat with us</div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
