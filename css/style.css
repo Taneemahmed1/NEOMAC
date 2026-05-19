@@ -1637,7 +1637,7 @@ h1, h2, h3, .navbar-brand {
     overflow: hidden;
     border-radius: 32px;
     cursor: pointer;
-    background: #f5f5f7;
+    background: #ffffff;
     border: 1px solid rgba(0,0,0,0.03);
 }
 
@@ -1860,6 +1860,18 @@ section:not(.hero-split-section) {
     padding: 60px 0 !important;
 }
 
+#gain {
+    padding-top: 60px !important;
+    padding-bottom: 0 !important;
+    background-color: #ffffff !important;
+}
+
+#support {
+    padding-top: 20px !important;
+    padding-bottom: 60px !important;
+    background-color: #ffffff !important;
+}
+
 @media (max-width: 991px) {
     .hero-split-section {
         height: auto !important;
@@ -1889,6 +1901,14 @@ section:not(.hero-split-section) {
     .hero-business-description { font-size: 1rem; margin-bottom: 1.5rem; }
     .hero-cta-group-split { flex-direction: column; width: 100%; gap: 12px; }
     .btn-hero-primary-red, .btn-hero-outline-red { width: 100%; text-align: center; padding: 15px; }
+    #gain {
+        padding-top: 40px !important;
+        padding-bottom: 0 !important;
+    }
+    #support {
+        padding-top: 15px !important;
+        padding-bottom: 40px !important;
+    }
 }
 
 /* Mobile Header and Hero Fine-Tuning */
@@ -1968,6 +1988,14 @@ section:not(.hero-split-section) {
 @media (max-width: 576px) {
     section:not(.hero-split-section) {
         padding: 30px 0 !important; /* Tighter spacing between sections on phone */
+    }
+    #gain {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important;
+    }
+    #support {
+        padding-top: 10px !important;
+        padding-bottom: 30px !important;
     }
     .hero-content-side {
         padding: 30px 16px 15px !important; /* Minimal spacing at the bottom of hero content on phone */
