@@ -84,7 +84,7 @@ h1, h2, h3, .navbar-brand {
 
 .hero-video-side {
     position: relative;
-    width: 65%;
+    width: 60%;
     height: 100%;
     background-color: #FFF;
 }
@@ -95,16 +95,17 @@ h1, h2, h3, .navbar-brand {
     object-fit: cover;
     mix-blend-mode: multiply;
     transform: translate3d(0, 0, 0);
+    filter: contrast(1.25) brightness(1.08);
 }
 
 .hero-content-side {
-    width: 35%;
+    width: 40%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FFF !important; /* Force background */
-    padding: 120px 5% 40px 8%; /* Adjusted right padding for 35/65 split */
+    padding: 120px 6% 40px 8%; /* Adjusted right padding for 40/60 split */
 }
 
 .hero-business-content {
@@ -1890,9 +1891,12 @@ section:not(.hero-split-section) {
         height: auto;
     }
     .hero-video-side {
-        height: 50vh;
-        min-height: 350px;
+        height: auto !important;
+        min-height: auto !important;
         background-color: #FFF !important;
+    }
+    .split-video-element {
+        height: auto !important;
     }
     .hero-content-side {
         padding: 80px 24px 40px; /* Reduced bottom padding */
@@ -1950,8 +1954,8 @@ section:not(.hero-split-section) {
         padding: 40px 24px 20px !important; /* Reduced padding on tablet */
     }
     .hero-video-side {
-        height: 40vh;
-        min-height: 300px;
+        height: auto !important;
+        min-height: auto !important;
     }
     .brand-card-title {
         font-size: 1.8rem;
