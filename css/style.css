@@ -86,6 +86,7 @@ h1, h2, h3, .navbar-brand {
     position: relative;
     width: 65%;
     height: 100%;
+    background-color: #FFF;
 }
 
 .split-video-element {
@@ -93,6 +94,7 @@ h1, h2, h3, .navbar-brand {
     height: 100%;
     object-fit: cover;
     mix-blend-mode: multiply;
+    transform: translate3d(0, 0, 0);
 }
 
 .hero-content-side {
@@ -1890,6 +1892,7 @@ section:not(.hero-split-section) {
     .hero-video-side {
         height: 50vh;
         min-height: 350px;
+        background-color: #FFF !important;
     }
     .hero-content-side {
         padding: 80px 24px 40px; /* Reduced bottom padding */
