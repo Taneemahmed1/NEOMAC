@@ -72,7 +72,7 @@ h1, h2, h3, .navbar-brand {
 .hero-split-section {
     width: 100%;
     height: 100vh;
-    background-color: #FFF;
+    background-color: #E3E3E5;
     overflow: hidden;
 }
 
@@ -84,7 +84,7 @@ h1, h2, h3, .navbar-brand {
 
 .hero-video-side {
     position: relative;
-    width: 50%;
+    width: 65%;
     height: 100%;
 }
 
@@ -95,13 +95,13 @@ h1, h2, h3, .navbar-brand {
 }
 
 .hero-content-side {
-    width: 50%;
+    width: 35%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFF !important; /* Force white background */
-    padding: 120px 8% 40px; /* Ample top padding for header clearance */
+    background-color: #E3E3E5 !important; /* Force background */
+    padding: 120px 5% 40px 8%; /* Adjusted right padding for 35/65 split */
 }
 
 .hero-business-content {
@@ -1894,7 +1894,7 @@ section:not(.hero-split-section) {
         padding: 80px 24px 40px; /* Reduced bottom padding */
         height: auto;
         justify-content: flex-start;
-        background-color: #FFF !important;
+        background-color: #E3E3E5 !important;
     }
     .hero-business-title { font-size: 2.8rem !important; margin-bottom: 1rem; }
     .hero-business-subtitle { font-size: 1.4rem !important; margin-bottom: 0.8rem; }
