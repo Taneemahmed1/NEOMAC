@@ -147,7 +147,8 @@ h3,
         max-width: 100%;
     }
 
-    .btn-hero-primary-red, .btn-hero-outline-red {
+    .btn-hero-primary-red,
+    .btn-hero-outline-red {
         padding: 8px 20px;
         font-size: 0.85rem;
         width: 100%;
